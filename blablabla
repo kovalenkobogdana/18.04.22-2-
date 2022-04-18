@@ -1,0 +1,14 @@
+public class ReverseWords{
+
+public static String reverseWords(String str){
+//write your code here...
+String[] substr;
+String rev = "";
+String del = " ";
+substr = str.split(del);
+for (int i = substr.length-1; i>= 0; i--){
+rev+= substr[i]+" ";
+}
+return rev.trim();
+}
+}
